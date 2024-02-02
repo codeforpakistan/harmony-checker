@@ -51,6 +51,21 @@
         width: 100%;
         margin-top: 20px; /* Add margin-top property to create space at the top */
     }
+    /* Equal height cards */
+    .equal-height-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .equal-height-row .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .equal-height-row .card-body {
+        flex-grow: 1;
+    }
+
 </style>
 </head>
 <body>
@@ -72,7 +87,7 @@
     <div class="container">
         <h2 class="text-center">About</h2>
         <p class="lead">
-            Harmony Checker is a collaborative initiative by YDF and Code for Pakistan, dedicated to promoting harmonious communication online. Our tool utilizes advanced natural language processing to identify and analyze unharmonious language and hate speech. By fostering a safer and more inclusive online environment, we aim to contribute to societal well-being. This collaboration reflects our commitment to building bridges and fostering understanding among communities.
+            Harmony Checker is a collaborative initiative by <a href="https://ydfpk.org/"YDF>Youth Development Foundation</a> and <a href="https://codeforpakistan.org">Code For Pakistan</a>, dedicated to promoting harmonious communication online. Our tool utilizes advanced natural language processing to identify and analyze unharmonious language and hate speech. By fostering a safer and more inclusive online environment, we aim to contribute to societal well-being. This collaboration reflects our commitment to building bridges and fostering understanding among communities.
         </p>
         <h2 class="text-center">Features</h2>
         <div class="row">
@@ -118,7 +133,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title"><i class="fas fa-pencil-alt"></i> Submit Content</h5>
-                        <p class="card-text">Users can input text, upload a PDF, or provide a URL to the content they wish to analyze.</p>
+                        <p class="card-text">Users provide text, PDFs, or URLs for analysis.</p>
                     </div>
                 </div>
             </div>
@@ -126,7 +141,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title"><i class="fas fa-search"></i> Analysis</h5>
-                        <p class="card-text">Harmony Checker reviews the content using GPT-4, focusing on context and cultural specifics to accurately identify potential hate speech or unharmonious language.</p>
+                        <p class="card-text">Harmony Checker assesses content for potential hate speech.</p>
                     </div>
                 </div>
             </div>
@@ -134,7 +149,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title"><i class="fas fa-file-alt"></i> Report Generation</h5>
-                        <p class="card-text">The system generates a detailed report, highlighting the instances of potential hate speech, categorizing them, and providing context and severity levels.</p>
+                        <p class="card-text">The system generates detailed reports, categorizing issues.</p>
                     </div>
                 </div>
             </div>
@@ -142,12 +157,14 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title"><i class="fas fa-lightbulb"></i> Actionable Insights</h5>
-                        <p class="card-text">Along with the report, users receive recommendations on how to address the identified issues, empowering them to make informed decisions.</p>
+                        <p class="card-text">Users receive recommendations to address identified issues.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    
     <div class="zero">
         <div class="container">
             <h2>Try it Out</h2>
